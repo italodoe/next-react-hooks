@@ -10,6 +10,7 @@ export default function SearchResult({ search }: SearchResultProps) {
   const [productResults, setProductResult] = useState<Product[] | null>(null);
   useEffect(() => {
     searchProducts(search).then(setProductResult);
+    setProductResult(null);
   }, [search]);
   if (productResults == null) {
     return <div>Loading...</div>;
