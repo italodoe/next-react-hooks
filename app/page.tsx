@@ -1,11 +1,15 @@
-import UserList from "@/components/UserLisrt";
-import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 export default function Home() {
   return (
-    <main className="p-4 ">
-      <h1 className="font-bold text-3xl text-center p-5 mb-4 sticky top-0 bg-slate-700">User list</h1>
-      <UserList></UserList>
+    <main className="flex flex-col p-10  gap-4">
+      <Link href="/server-user-list" className="text-blue-200">
+        User list from server
+      </Link>
+      <Link href="/client-user-list" className="text-blue-200">
+        User list from client
+      </Link>
     </main>
   );
 }
