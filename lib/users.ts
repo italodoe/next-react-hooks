@@ -9,7 +9,7 @@ export type User = {
   };
 };
 export type UserComponentProps = {
-  user: User;
+  userProp: User;
 };
 export const loadUsers = async () => {
   const response = await fetch(`https://randomuser.me/api/?results=20`);

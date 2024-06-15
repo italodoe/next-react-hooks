@@ -6,7 +6,7 @@ export default async function UserList() {
   return (
     <div className="flex flex-col gap-4 ">
       {users.map((u) => (
-        <UserComponent key={u.email} user={u}></UserComponent>
+        <UserComponent key={u.email} userProp={u}></UserComponent>
       ))}
     </div>
   );
