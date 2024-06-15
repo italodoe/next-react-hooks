@@ -19,11 +19,15 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(39, 39, 39);
-  
+
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+h1{
+  @apply font-bold text-3xl text-center p-5 mb-4 sticky top-0 bg-stone-500
 }
