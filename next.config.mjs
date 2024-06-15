@@ -9,6 +9,12 @@ const nextConfig = {
         hostname: "randomuser.me",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "*.dummyjson.com",
+        pathname: "/**",
+      },
+
     ],
   },
 };

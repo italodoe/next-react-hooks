@@ -31,3 +31,7 @@ body {
 h1{
   @apply font-bold text-3xl text-center p-5 mb-4 sticky top-0 bg-stone-500
 }
+
+.main-link{
+  @apply text-blue-200
+}
